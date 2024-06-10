@@ -28,7 +28,6 @@
 	<ul v-else class="list-group mt-4">
 		<li class="list-group-item d-flex align-items-center justify-content-between gap-3" v-for="tarefa in props.tarefas">
 			<div class="d-flex align-items-center gap-3">
-				{{ tarefa.id }}
 				<button @click="props.remover(tarefa.id)" class="btn-delete border-0 bg-transparent p-0 m-0">
 					<i class="bi bi-trash"></i>
 				</button>
