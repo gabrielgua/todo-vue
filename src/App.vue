@@ -38,7 +38,7 @@
 
 	const adicionar = (): void => {
 		const newTarefa: Tarefa = {
-			id: state.tarefas.length + 1,
+			id: state.tarefas[state.tarefas.length - 1].id + 1,
 			titulo: tarefa.value,
 			finalizada: false,
 			dataFinalizacao: null
